@@ -1,0 +1,26 @@
+server:
+  port: 9090
+spring:
+  profiles:
+    active: default
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url:
+    username:
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 100MB
+
+jwt:
+  secret: ''
+
+cors:
+  all: true
+  ip: http://localhost
+  port:
